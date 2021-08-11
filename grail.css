@@ -1,0 +1,30 @@
+body {
+    background-color: darkgrey;
+}
+
+h1 {
+    font-family: cursive;
+    text-decoration: underline black 1px;
+}
+
+form {
+    font-size: 18pt;
+}
+
+div {
+    border: black solid 1px;
+}
+
+button {
+    font-size: 25pt;
+    margin: 5px;
+    padding: 2px;
+}
+
+.modal {
+    display: none;
+}
+
+input {
+    size: 5px;
+}

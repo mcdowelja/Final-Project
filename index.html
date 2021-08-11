@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Final Project</title>
+    <link rel="stylesheet" href="./grail.css">
+</head>
+<body>
+    <center><h1 id="Welcome">Monty Python and the Holy Grail Quiz</h1></center>
+    <form name="quiz" id="quiz">
+    <div>
+        <p>1. What is your quest?</p>
+        <p><input type="radio" name="question1" value="a">To Find the Grail</p>
+        <p><input type="radio" name="question1" value="b">Kill Bigfoot</p>
+        <p><input type="radio" name="question1" value="c">Find Nessie</p>
+        <p><input type="radio" name="question1" value="d">Colonize Mars</p>
+    </div>
+    <div>
+        <p>2. What is your favorite color?</p>
+        <p><input type="radio" name="question2" value="a">Green</p>
+        <p><input type="radio" name="question2" value="b">Yellow</p>
+        <p><input type="radio" name="question2" value="c">Brown</p>
+        <p><input type="radio" name="question2" value="d">Blue</p>
+    </div>
+    <div>
+        <p>3. What is the airspeed velocity of an unladen swallow?</p>
+        <p><input type="radio" name="question3" value="a">120kmh</p>
+        <p><input type="radio" name="question3" value="b">300kmh</p>
+        <p><input type="radio" name="question3" value="c">African or European?</p>
+        <p><input type="radio" name="question3" value="d">Mach 1</p>
+    </div>
+    <div>
+        <p>4. What will appease the knights who say Ni?</p>
+        <p><input type="radio" name="question4" value="a">Spam</p>
+        <p><input type="radio" name="question4" value="b">A small pony</p>
+        <p><input type="radio" name="question4" value="c">Chocolates</p>
+        <p><input type="radio" name="question4" value="d">A Shrubbery</p>
+    </div>
+    <div>
+        <p>5. What weapon destroyed the killer bunny?</p>
+        <p><input type="radio" name="question5" value="a">The Holy Hand Grenade</p>
+        <p><input type="radio" name="question5" value="b">Chainsaw</p>
+        <p><input type="radio" name="question5" value="c">Flamethrower</p>
+        <p><input type="radio" name="question5" value="d">105mm Round</p>
+    </div>
+    
+    <button id="Submit">Submit Quiz</button>
+
+    <div id="myModal" class="modal">
+        <div class="results">
+            <span class="close">&times;</span>
+            <p id="score">Score Here</p>
+        </div>
+    </div>    
+</form>
+</body>
+<script src="./grail.js" defer></script>    
+</html>

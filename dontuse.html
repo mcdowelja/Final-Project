@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Final Project</title>
+    <style>
+
+    body{
+        background-color: rgba(73, 102, 78, 0.363);
+    }
+
+    .container{
+        font-size: 14pt;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .qbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        border: 1px solid black;
+        width: 1500px;
+        height: auto;
+        font-weight: bold;
+        font-size: 16pt;
+    }
+    .abox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        border: 1px solid black;
+        width: 1500px;
+        height: 34px;
+    }
+
+    #answer {
+        width: 200px;
+        position: center;
+        margin-top: 5px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 14pt;
+    }
+
+    .welcome {
+        display: block;
+        margin: auto;
+        width: 50%;
+        border: black solid 1px;
+        }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        width: 1200px; /* Full width */
+        height: 1200px; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.61); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */  
+    }
+
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<center><h1 id="Welcome">Monty Python and the Holy Grail</h1></center>
+    <div id="Container">
+        <div class="qbox">
+            <p>1. What is your quest?</p>
+        </div>
+        <div class="abox">
+            <div id="answer">To Find the Grail</div>
+            <input type="radio" name="Q1" value="Choice 1">
+            <div id="answer">Kill Bigfoot</div>
+            <input type="radio" name="Q1" value="Choice 2">
+            <div id="answer">Find Nessie</div>
+            <input type="radio" name="Q1" value="Choice 3">
+            <div id="answer">Colonize Mars</div>
+            <input type="radio" name="Q1" value="Choice 4">
+        </div>
+    <br>
+        <div class="qbox">
+            <p>2. What is your favorite color?</p>
+        </div>
+        <div class="abox">
+            <div id="answer">Green</div>
+            <input type="radio" name="Q2" value="Choice 1">
+            <div id="answer">Yellow</div>
+            <input type="radio" name="Q2" value="Choice 2">
+            <div id="answer">Brown</div>
+            <input type="radio" name="Q2" value="Choice 3">
+            <div id="answer">Blue</div>
+            <input type="radio" name="Q2" value="Choice 4">
+        </div>
+    <br>
+        <div class="qbox">
+            <p>3. What is the airspeed velocity of an unladen swallow?</p>
+        </div>
+        <div class="abox">
+            <div id="answer">120kmh</div>
+            <input type="radio" name="Q3" value="Choice 1">
+            <div id="answer">300kmh</div>
+            <input type="radio" name="Q3" value="Choice 2">
+            <div id="answer">African or European?</div>
+            <input type="radio" name="Q3" value="Choice 3">
+            <div id="answer">Turtle</div>
+            <input type="radio" name="Q3" value="Choice 4">
+        </div>
+        </div>
+        <button id="Submit">Submit</button>
+
+        <div id="myModal" class="modal">
+            <div class="results">
+                <span class="close">&times;</span>
+                <img src="./grail.jpg" alt="Grail" height="600px" width="600px">
+                <p id="score">Display the Results here</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+var modal = document.getElementById("myModal");
+var button = document.getElementById("Submit");
+var span = document.getElementsByClassName("close")[0];
+
+button.onclick = function() {
+    modal.style.display = "flex"
+}
+
+span.onclick = function() {
+    modal.style.display = "none"
+}
+</script>
+</body>
+</html>
