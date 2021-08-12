@@ -23,8 +23,31 @@ button {
 
 .modal {
     display: none;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 700px;
+    top: 1500px;
+    background-color: rgb(255, 255, 255);
+    
 }
 
-input {
-    size: 5px;
+.results {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+}
+
+span {
+    border: tomato solid 1px;
+    border-radius: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+input[type="radio"] {
+    transform: scale(1.5);
 }
